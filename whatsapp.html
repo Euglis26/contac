@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selecciona un número de WhatsApp</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #6e8efb, #a777e3);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        
+        .container {
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            width: 100%;
+            max-width: 450px;
+            overflow: hidden;
+            text-align: center;
+        }
+        
+        .header {
+            background-color: #25D366;
+            padding: 25px 20px;
+            color: white;
+        }
+        
+        .header h1 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        
+        .header p {
+            font-size: 16px;
+            opacity: 0.9;
+        }
+        
+        .whatsapp-icon {
+            font-size: 50px;
+            margin-bottom: 15px;
+        }
+        
+        .content {
+            padding: 30px 25px;
+        }
+        
+        .option {
+            background-color: #f5f5f5;
+            border-radius: 10px;
+            padding: 20px;
+            margin-bottom: 20px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+        
+        .option:hover {
+            background-color: #e9e9e9;
+            transform: translateY(-3px);
+            border-color: #25D366;
+        }
+        
+        .option h3 {
+            color: #25D366;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        
+        .option p {
+            color: #666;
+            font-size: 14px;
+        }
+        
+        .note {
+            background-color: #fef9e7;
+            border-left: 4px solid #f1c40f;
+            padding: 15px;
+            margin-top: 25px;
+            text-align: left;
+            border-radius: 5px;
+        }
+        
+        .note h4 {
+            color: #d35400;
+            margin-bottom: 8px;
+            font-size: 16px;
+        }
+        
+        .note p {
+            font-size: 14px;
+            color: #7f8c8d;
+            line-height: 1.5;
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                border-radius: 10px;
+            }
+            
+            .header {
+                padding: 20px 15px;
+            }
+            
+            .content {
+                padding: 20px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="whatsapp-icon">📱</div>
+            <h1>Contactar por WhatsApp</h1>
+            <p>Selecciona con qué número deseas comunicarte</p>
+        </div>
+        
+        <div class="content">
+            <div class="option" onclick="window.open('https://wa.me/13054983936', '_blank')">
+                <p>+1 (305) 498-3936</p>
+            </div>
+            
+            <div class="option" onclick="window.open('https://wa.me/17869359075', '_blank')">
+                <p>+1 (786) 935-9075</p>
+                
+            </div>
+            
+            <div class="note">
+                <h4>Nota para usar en Canva:</h4>
+                <p>Para usar esto en Canva, publica esta página en un servicio de hosting web y luego usa la opción "Embed" en Canva para insertarla mediante un enlace. Canva no permite directamente agregar código HTML personalizado en sus diseños básicos.</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
